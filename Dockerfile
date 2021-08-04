@@ -1,7 +1,7 @@
 FROM tomcat:8.0-alpine
 
-
-ADD ./webapp.war /usr/local/tomcat/webapps
+COPY /webapp.war /usr/local/tomcat/webapps/webapp.war
+# ADD ./webapp.war /usr/local/tomcat/webapps
 
 EXPOSE 8080
 
